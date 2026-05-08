@@ -58,18 +58,10 @@ export async function TaskDetailPageOverride({ task, slug }: { task: TaskKey; sl
       />
       <header className="border-b border-rose-100/80 bg-white">
         <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6 sm:py-12">
-          <p className="text-xs font-bold uppercase tracking-[0.28em] text-rose-400/90">{isPressWire ? 'Press release' : taskLabel}</p>
+          <p className="text-xs font-bold uppercase tracking-[0.28em] text-rose-400/90">{isPressWire ? 'Release media' : taskLabel}</p>
           <h1 className="mt-3 font-display text-3xl font-bold leading-[1.12] tracking-tight sm:text-4xl md:text-[2.4rem]">{post.title}</h1>
           {subtitle ? <p className="mt-4 text-lg text-[var(--brand-muted)]">{subtitle}</p> : null}
           <div className="mt-6 flex flex-wrap items-center gap-3 text-sm text-[var(--brand-muted)]">
-            <time dateTime={post.publishedAt ? new Date(post.publishedAt).toISOString() : undefined}>
-              {new Date(post.publishedAt || Date.now()).toLocaleString('en-US', {
-                month: 'long',
-                day: 'numeric',
-                year: 'numeric',
-              })}
-            </time>
-            <span className="h-1 w-1 rounded-full bg-rose-200" aria-hidden />
             <span className="font-medium text-[var(--brand-ink)]">{post.authorName || SITE_CONFIG.name}</span>
           </div>
           <div className="mt-6 flex flex-wrap gap-2" aria-label="Share">
@@ -166,9 +158,6 @@ export async function TaskDetailPageOverride({ task, slug }: { task: TaskKey; sl
                     </div>
                   ) : null}
                   <div className="p-4">
-                    <p className="text-xs text-slate-500">
-                      {new Date(item.publishedAt || Date.now()).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
-                    </p>
                     <h3 className="mt-1 line-clamp-2 font-display text-base font-bold text-[var(--brand-ink)] group-hover:text-[var(--brand-red)]">
                       {item.title}
                     </h3>
