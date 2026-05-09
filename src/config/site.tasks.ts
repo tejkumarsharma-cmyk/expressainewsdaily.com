@@ -1,7 +1,7 @@
 export const siteTaskDefinitions = [
   {
     key: 'mediaDistribution',
-    label: 'Press releases',
+    label: 'Release media',
     route: '/updates',
     description: 'Newswire stories, company announcements, and distributed press updates.',
     contentType: 'mediaDistribution',

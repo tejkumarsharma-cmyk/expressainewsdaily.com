@@ -84,10 +84,7 @@ export default function AboutPage() {
             </Card>
           ))}
         </div>
-        <p className="text-center text-sm text-muted-foreground">
-          For coverage examples, visit the <Link className="font-semibold text-[var(--brand-red)]" href="/updates">press archive</Link>, or compare{' '}
-          <Link className="font-semibold text-[var(--brand-red)]" href="/pricing">plans and add-ons</Link> when you are ready to scale volume.
-        </p>
+
       </div>
     </PageShell>
   )

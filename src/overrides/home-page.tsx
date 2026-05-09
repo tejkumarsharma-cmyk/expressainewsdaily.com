@@ -115,7 +115,7 @@ export async function HomePageOverride() {
           <div className="mt-12 grid gap-8 md:grid-cols-3">
             {[
               { step: '1', title: 'Add profile', blurb: 'Create your org profile, boilerplate, and contact surface.', icon: UserPlus, tone: 'from-slate-50/90 to-white' },
-              { step: '2', title: 'Upload press release', blurb: 'Drop your headline, body, quotes, and hero imagery.', icon: Upload, tone: 'from-slate-50/90 to-white' },
+              { step: '2', title: 'Upload release media', blurb: 'Drop your headline, body, quotes, and hero imagery.', icon: Upload, tone: 'from-slate-50/90 to-white' },
               { step: '3', title: 'Publish', blurb: 'Your wire page goes live in the archive—clean and scannable.', icon: Radio, tone: 'from-slate-50/90 to-white' },
             ].map((item) => (
               <div
@@ -164,15 +164,9 @@ export async function HomePageOverride() {
             </div>
             <ul className="mt-10 divide-y divide-slate-200/80">
               {(posts.length ? posts : []).map((post) => {
-                const d = new Date(post.publishedAt || Date.now())
-                const day = d.toLocaleDateString('en-US', { day: 'numeric' })
-                const mon = d.toLocaleDateString('en-US', { month: 'short' })
                 return (
                   <li key={post.id} className="[transition:background_0.2s_ease] hover:bg-slate-100/70">
                     <Link href={`/updates/${post.slug}`} className="group flex items-start gap-4 py-4 sm:gap-6 sm:py-5">
-                      <p className="w-20 shrink-0 text-sm font-semibold tabular-nums text-[#e36414]">
-                        {mon} {day}
-                      </p>
                       <p className="min-w-0 flex-1 text-base font-semibold leading-snug text-[var(--brand-ink)] group-hover:underline sm:text-lg">
                         {post.title}
                       </p>
@@ -337,11 +331,7 @@ export async function HomePageOverride() {
               {siteContent.home.sidePoints[2]}
             </p>
             <p className="text-[var(--brand-muted)]">
-              Questions about timing, add-ons, or a higher-volume program? Start with the{' '}
-              <Link href="/pricing" className="font-semibold text-[#9a031e] underline-offset-2 hover:underline">
-                pricing overview
-              </Link>{' '}
-              and reach the desk on{' '}
+              Questions about timing, add-ons, or a higher-volume program? Reach the desk on{' '}
               <Link href="/contact" className="font-semibold text-[#9a031e] underline-offset-2 hover:underline">
                 the contact page
               </Link>

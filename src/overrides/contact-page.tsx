@@ -1,9 +1,7 @@
 import Image from 'next/image'
-import { Clock, MapPin, Phone } from 'lucide-react'
 import { NavbarShell } from '@/components/shared/navbar-shell'
 import { Footer } from '@/components/shared/footer'
 import { SITE_CONFIG } from '@/lib/site-config'
-import { siteIdentity } from '@/config/site.identity'
 import { Button } from '@/components/ui/button'
 
 export const CONTACT_PAGE_OVERRIDE_ENABLED = true
@@ -114,30 +112,7 @@ export function ContactPageOverride() {
                 </p>
               </div>
             </div>
-            <div className="space-y-4 rounded-2xl border border-slate-200/70 bg-slate-100/80 p-5">
-              <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-slate-500">Phone hours</h3>
-              <p className="inline-flex items-center gap-2 text-sm text-[var(--brand-ink)]">
-                <Clock className="h-4 w-4 text-[var(--brand-orange)]" />
-                Mon–Fri, 8:00–17:00 (local to your request routing)
-              </p>
-            </div>
-            <div className="space-y-3 rounded-2xl border border-rose-200/50 bg-white p-5 shadow-sm">
-              <p className="text-sm font-bold">North America</p>
-              <p className="inline-flex gap-2 text-sm text-[var(--brand-muted)]">
-                <Phone className="mt-0.5 h-4 w-4 shrink-0 text-[var(--brand-orange)]" />
-                <span>Directory routing line (toll-free): 1-800-555-0142</span>
-              </p>
-              <p className="inline-flex gap-2 text-sm text-[var(--brand-muted)]">
-                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-[var(--brand-orange)]" />
-                <span>Mail: 400 Market St, Suite 1200 — Seattle, WA 98121</span>
-              </p>
-            </div>
-            <p className="text-sm text-[var(--brand-muted)]">
-              Inbox:{' '}
-              <a className="font-semibold text-[var(--brand-red)]" href={`mailto:desk@${siteIdentity.domain}`}>
-                desk@{siteIdentity.domain}
-              </a>
-            </p>
+
           </div>
         </div>
       </main>

@@ -158,13 +158,6 @@ export async function TaskListPageOverride({ task, category }: { task: TaskKey; 
                     </div>
                   </div>
                   <div className="p-5">
-                    <p className="text-xs font-medium text-slate-500">
-                      {new Date(post.publishedAt || Date.now()).toLocaleDateString('en-US', {
-                        month: 'long',
-                        day: 'numeric',
-                        year: 'numeric',
-                      })}
-                    </p>
                     <h2 className="mt-2 line-clamp-2 font-display text-lg font-bold leading-snug text-[var(--brand-ink)] [transition:color_0.2s] group-hover:text-[var(--brand-red)]">
                       {post.title}
                     </h2>

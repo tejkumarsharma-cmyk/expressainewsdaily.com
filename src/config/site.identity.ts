@@ -1,7 +1,7 @@
 export const siteIdentity = {
   code: process.env.NEXT_PUBLIC_SITE_CODE || 'sfvh06zltv',
   name: process.env.NEXT_PUBLIC_SITE_NAME || 'ExpressA News Daily',
-  tagline: process.env.NEXT_PUBLIC_SITE_TAGLINE || 'Press release distribution for modern media teams',
+  tagline: process.env.NEXT_PUBLIC_SITE_TAGLINE || 'Release media distribution for modern media teams',
   description:
     process.env.NEXT_PUBLIC_SITE_DESCRIPTION ||
     'Distribute company news, product launches, and media announcements with a clear archive, strong reach signals, and reader-friendly story pages on ExpressA News Daily.',
