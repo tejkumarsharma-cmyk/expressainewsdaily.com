@@ -9,16 +9,14 @@ const columns: { title: string; links: { label: string; href: string }[] }[] = [
   {
     title: 'Distribution',
     links: [
-      { label: 'Press releases', href: '/updates' },
+      { label: 'Release media', href: '/updates' },
       { label: 'Search', href: '/search' },
-      { label: 'Pricing', href: '/pricing' },
     ],
   },
   {
     title: 'Company',
     links: [
       { label: 'About', href: '/about' },
-      { label: 'Press resources', href: '/press' },
       { label: 'Contact', href: '/contact' },
     ],
   },

@@ -9,11 +9,11 @@ export const siteContent = {
   },
   hero: {
     badge: 'Distribution',
-    title: ['Press Release Distribution'],
+    title: ['Release Media Distribution'],
     description:
       'Send polished announcements, reach journalists and search surfaces, and keep a clean public archive that reads like a professional newswire.',
     primaryCta: {
-      label: 'Send a Press Release',
+      label: 'Send a Release Media',
       href: '/register',
     },
     secondaryCta: {
@@ -29,14 +29,14 @@ export const siteContent = {
   },
   home: {
     metadata: {
-      title: 'Press release distribution & latest company news',
+      title: 'Release media distribution & latest company news',
       description:
         'Distribute media announcements, product launches, and public statements with ExpressA News Daily’s press archive and reader-friendly story pages.',
-      openGraphTitle: 'Press release distribution & latest company news',
+      openGraphTitle: 'Release media distribution & latest company news',
       openGraphDescription:
         'A professional press wire experience: distribution positioning, scannable archives, and premium story presentation.',
       keywords: [
-        'press release',
+        'release media',
         'newswire',
         'media distribution',
         'company announcements',
@@ -78,7 +78,7 @@ export const siteContent = {
       href: '/pricing',
     },
   },
-  taskSectionHeading: 'Press releases',
+  taskSectionHeading: 'Release media',
   taskSectionDescriptionSuffix: 'The newest items on your newswire.',
 } as const
 
@@ -112,7 +112,7 @@ export const taskPageMetadata: Record<Exclude<TaskKey, 'comment' | 'org' | 'soci
     description: 'Open PDFs and downloadable files.',
   },
   mediaDistribution: {
-    title: 'Latest press releases',
+    title: 'Latest release media',
     description: 'Browse the full wire: headlines, categories, and dates.',
   },
 }
@@ -132,7 +132,7 @@ export const taskIntroCopy: Record<
   comment: { title: 'Comments', paragraphs: ['Commentary and response posts.'], links: [{ label: 'Home', href: '/' }] },
   org: { title: 'Organizations', paragraphs: ['Organization pages and entities.'], links: [{ label: 'Home', href: '/' }] },
   mediaDistribution: {
-    title: 'Press release archive',
+    title: 'Release media archive',
     paragraphs: [
       'Scan the wire by recency, category, and headline. Each item opens into a full release page designed for clear reading, sharing, and follow-up.',
       'Use search when you are looking for a name, product, or topic that appeared across your announcements.',

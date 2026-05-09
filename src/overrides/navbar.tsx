@@ -12,8 +12,7 @@ import { Button } from '@/components/ui/button'
 export const NAVBAR_OVERRIDE_ENABLED = true
 
 const mainNav = [
-  { label: 'Press releases', href: '/updates' },
-  { label: 'Pricing', href: '/pricing' },
+  { label: 'Release media', href: '/updates' },
   { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },
 ] as const
